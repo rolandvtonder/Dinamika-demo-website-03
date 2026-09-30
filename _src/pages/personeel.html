@@ -1,0 +1,45 @@
+<!--META
+{
+  "active": "personeel",
+  "title_af": "Personeel | Hoërskool Dinamika",
+  "title_en": "Staff | Hoërskool Dinamika",
+  "desc_af": "Ontmoet die bestuur en onderwysers van Hoërskool Dinamika, met hul vakke en e-posadresse.",
+  "desc_en": "Meet the management and teachers of Hoërskool Dinamika, with their subjects and e-mail addresses.",
+  "og_image": "staff-group.webp",
+  "scripts": ["staff-data.js"]
+}
+-->
+
+<section class="page-hero">
+  <img class="page-hero__img" src="assets/img/staff-group.webp" alt="" width="1489" height="1200" fetchpriority="high" style="object-position:center 30%">
+  <div class="container page-hero__inner">
+    <nav class="breadcrumb" aria-label="Broodkrummels" data-en-aria-label="Breadcrumb">
+      <ol><li><a href="index.html">[[Tuis||Home]]</a></li><li><a href="ons-skool.html">[[Ons Skool||Our School]]</a></li><li aria-current="page">[[Personeel||Staff]]</li></ol>
+    </nav>
+    <h1>[[Personeel||Staff]]</h1>
+    <p>[[81 passievolle personeellede — senior personeel onderrig ook junior klasse.||81 passionate staff members — senior staff teach junior classes too.]]</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="staff-title">
+  <div class="container">
+    <h2 id="staff-title" class="visually-hidden">[[Personeelgids||Staff directory]]</h2>
+    <div class="staff-tools">
+      <div class="filter-bar" data-staff-filter role="group" aria-label="Filtreer personeel" data-en-aria-label="Filter staff">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true">[[Alle personeel||All staff]]</button>
+        <button type="button" class="chip" data-filter="management" aria-pressed="false">[[Bestuur||Management]]</button>
+        <button type="button" class="chip" data-filter="teaching" aria-pressed="false">[[Doserend||Teaching]]</button>
+      </div>
+      <div class="search">
+        <label for="staff-search" class="visually-hidden">[[Soek personeel of vakke||Search staff or subjects]]</label>
+        {{i:search}}
+        <input id="staff-search" type="search" placeholder="Soek naam of vak…" data-en-placeholder="Search name or subject…" autocomplete="off">
+      </div>
+    </div>
+    <p id="staff-count" class="visually-hidden" role="status"></p>
+    <div data-staff>
+      <noscript><p>[[Skakel JavaScript aan om die personeelgids te sien, of bel ons by 011 867 5986.||Enable JavaScript to view the staff directory, or call us on 011 867 5986.]]</p></noscript>
+    </div>
+    <p id="staff-empty" class="empty-state empty-state--light" hidden>[[Geen personeellede stem ooreen met u soektog nie. Probeer 'n ander naam of vak.||No staff members match your search. Try another name or subject.]]</p>
+  </div>
+</section>

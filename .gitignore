@@ -1,0 +1,4 @@
+medias/
+.claude/
+__pycache__/
+*.pyc

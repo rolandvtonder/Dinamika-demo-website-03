@@ -1,0 +1,71 @@
+<!--META
+{
+  "active": "nuus",
+  "title_af": "Namies Nuus & Kalender | Hoërskool Dinamika",
+  "title_en": "Namies News & Calendar | Hoërskool Dinamika",
+  "desc_af": "Die jongste nuus, prestasies en komende geleenthede by Hoërskool Dinamika in Alberton.",
+  "desc_en": "The latest news, achievements and upcoming events at Hoërskool Dinamika in Alberton.",
+  "og_image": "cheerleaders.jpg",
+  "scripts": ["news-data.js", "events-data.js"]
+}
+-->
+
+<section class="page-hero">
+  <img class="page-hero__img" src="assets/img/cheerleaders.jpg" alt="" width="1280" height="959" fetchpriority="high">
+  <div class="container page-hero__inner">
+    <nav class="breadcrumb" aria-label="Broodkrummels" data-en-aria-label="Breadcrumb">
+      <ol><li><a href="index.html">[[Tuis||Home]]</a></li><li aria-current="page">[[Nuus||News]]</li></ol>
+    </nav>
+    <h1>[[Namies Nuus||Namies News]]</h1>
+    <p>[[Prestasies, geleenthede en die lewe by Hoërskool Dinamika.||Achievements, events and life at Hoërskool Dinamika.]]</p>
+  </div>
+</section>
+
+<nav class="page-tabs" aria-label="Op hierdie bladsy" data-en-aria-label="On this page">
+  <div class="container">
+    <ul>
+      <li><a href="#nuus">[[Nuus||News]]</a></li>
+      <li><a href="#kalender">[[Skoolkalender||School calendar]]</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="section section--paper" id="nuus" aria-labelledby="nuus-title">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div>
+        <p class="eyebrow">[[Nuusflits||Latest news]]</p>
+        <h2 id="nuus-title">[[Alle nuus||All news]]</h2>
+      </div>
+      <a class="btn btn--ghost" href="https://www.facebook.com/HsDinamika99" target="_blank" rel="noopener">{{i:facebook}}[[Volg ons op Facebook||Follow us on Facebook]]</a>
+    </div>
+    <div class="filter-bar" data-news-filter role="group" aria-label="Filtreer volgens kategorie" data-en-aria-label="Filter by category"></div>
+    <p id="news-count" class="visually-hidden" role="status"></p>
+    <div class="news-grid news-grid--3" data-news-list>
+      <noscript><p>[[Volg ons op <a href="https://www.facebook.com/HsDinamika99">Facebook</a> vir die jongste nuus.||Follow us on <a href="https://www.facebook.com/HsDinamika99">Facebook</a> for the latest news.]]</p></noscript>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="kalender" aria-labelledby="kalender-title">
+  <div class="container admit">
+    <div>
+      <p class="eyebrow">[[Skoolkalender||School calendar]]</p>
+      <h2 id="kalender-title">[[Komende geleenthede||Upcoming events]]</h2>
+      <p class="lead">[[Merk hierdie datums op u kalender. Geleenthede wat verby is, verdwyn outomaties van die lys.||Mark these dates on your calendar. Events that have passed disappear from the list automatically.]]</p>
+      <div class="panel" style="margin-top:24px">
+        <h3 style="font-size:1.4rem">[[Bly op hoogte||Stay informed]]</h3>
+        <p style="color:var(--muted)">[[Die jongste aankondigings word eerste op ons sosiale media geplaas.||The latest announcements are posted first on our social media.]]</p>
+        <div class="btn-row">
+          <a class="btn btn--navy btn--sm" href="https://www.facebook.com/HsDinamika99" target="_blank" rel="noopener">{{i:facebook}}Facebook</a>
+          <a class="btn btn--ghost btn--sm" href="https://www.instagram.com/hs_dinamika/" target="_blank" rel="noopener">{{i:instagram}}Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="calendar">
+      <h3>{{i:calendar}}[[Kalender||Calendar]]</h3>
+      <ul class="event-list" data-events></ul>
+    </div>
+  </div>
+</section>
+@@NEWS_MODAL@@
